@@ -271,7 +271,7 @@ main{
     }
 
 }
-@media all and (min-width: 1200px) and (max-width: 1400px){
+@media all and (min-width: 1200px) and (max-width: 1500px){
     .container_cards{
         grid-template-columns: repeat(3, 1fr);
         align-content: center;
