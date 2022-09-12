@@ -269,6 +269,20 @@ main{
         padding-bottom: 50vh;
         padding-top: 40vh;
     }
+
+}
+@media all and (min-width: 1200px) and (max-width: 1400px){
+    .container_cards{
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        width: 100%;
+        max-width: 80vw;
+        height: 430px;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 50vh;
+        padding-top: 40vh;
+    }
 }
 
 .card:hover{
