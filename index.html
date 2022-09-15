@@ -10,99 +10,115 @@
         <title>DeskON Hardware</title>
         <!-- Descripcion del sitio-->
         <meta name="description" content="Tienda de componentes informaticos y periféricos">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- Bootstrap-->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </head>
-    <body>
+
+
+    <body class="container-fluid" style="background-color: #141414;">
+        
+        
         <!-- Barra de navegacion -->
-        <header>
-            <nav class="menu-fixed">
-                <div class="header_width">
-                    <div class="logo">  
-                        <a href="index.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660866818/Desafio%20Coder/Logo2_z7jvze.png" alt="DeskON_Logo" class="logo_img"></a>
-                    </div>
-                    <div class="landscape-menu">
-                        <li>
-                            <a href="#">Productos</a>
-                                <ul class="vertical-menu">
-                                    <li><a href="./pages/motherboards.html" target="_self">Motherboards</a></li>
-                                    <li><a href="./pages/placas-de-video.html" target="_self">Placas de video</a></li>
-                                    <li><a href="./pages/microprocesadores.html" target="_self">Microprocesadores</a></li>
-                                    <li><a href="./pages/fuentes.html" target="_self">Fuentes</a></li>
-                                    <li><a href="./pages/gabinetes.html" target="_self">Gabinetes</a></li>
-                                    <li><a href="./pages/memorias-ram.html" target="_self">Memorias RAM</a></li>
-                                    <li><a href="./pages/almacenamiento.html" target="_self">Almacenamiento</a></li>
-                                    <li><a href="./pages/perifericos.html" target="_self">Periféricos</a></li>
-                                </ul>
-                        
-                        <li><a href="./pages/contacto.html" target="_self" class="contact_shortcut">Contacto</a></li>
-                    </div>
-                </div>
-    
 
-            </nav>
-        </header>
+        <nav class="navbar row navbar-expand navbar-dark" style="background-color: #3d1068;">
+            <div class="container-fluid">
+              <a href="index.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660866818/Desafio%20Coder/Logo2_z7jvze.png" alt="DeskON_Logo" class="logo_img"></a>
 
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="menuproductos" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuproductos" style="background-color: #3d1068;" >
+                            <li><a class="dropdown-item" href="./pages/motherboards.html" target="_self">Motherboards</a></li>
+                            <li><a class="dropdown-item" href="./pages/placas-de-video.html" target="_self">Placas de video</a></li>
+                            <li><a class="dropdown-item" href="./pages/microprocesadores.html" target="_self">Microprocesadores</a></li>
+                            <li><a class="dropdown-item" href="./pages/fuentes.html" target="_self">Fuentes</a></li>
+                            <li><a class="dropdown-item" href="./pages/gabinetes.html" target="_self">Gabinetes</a></li>
+                            <li><a class="dropdown-item" href="./pages/memorias-ram.html" target="_self">Memorias RAM</a></li>
+                            <li><a class="dropdown-item" href="./pages/almacenamiento.html" target="_self">Almacenamiento</a></li>
+                            <li><a class="dropdown-item" href="./pages/perifericos.html" target="_self">Periféricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="./pages/contacto.html" target="_self">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
         <!-- Contenido principal -->
 
         <main>
 
             <!-- Slider-->
 
-            <div class="container_slider">
-                <ul>
-                    <li id="slider_1">
-                        <a href="./pages/placas-de-video.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660151364/Desafio%20Coder/RTX_zdj4t5.png" alt="Placas_nvidia"></a>
-                    </li>
-                    
-                    <li id="slider_2">
-                        <a href="./pages/memorias-ram.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660151364/Desafio%20Coder/RAMs_x9dnz7.png" alt="Memorias_RAM"></a>
-                    </li>
-                    
-                    <li id="slider_3">
-                        <a href="./pages/placas-de-video.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660151364/Desafio%20Coder/Radeon_yoqjgi.png" alt="Placas_radeon"></a>
-                    </li>
-                </ul>
+            <div id="carouselExampleControls" class="carousel slide row" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660151364/Desafio%20Coder/RTX_zdj4t5.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660151364/Desafio%20Coder/RAMs_x9dnz7.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660151364/Desafio%20Coder/Radeon_yoqjgi.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
-            </div>
-
+            
             <!-- Logos de marcas-->
 
             <div class="container_logos">
-                    <li id="amd_logo">
-                        <img src="https://res.cloudinary.com/edalyn/image/upload/v1660192175/Desafio%20Coder/Marcas/amd-4-logo-svg-vector_bcld2q.svg" alt="Logo AMD">
-                    </li>
+                <li id="amd_logo">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660192175/Desafio%20Coder/Marcas/amd-4-logo-svg-vector_bcld2q.svg" alt="Logo AMD">
+                </li>
 
-                    <li id="asus_logo">
-                        <img src="https://res.cloudinary.com/edalyn/image/upload/v1660278070/logos%2023/Asus_m934ys.webp" alt="Logo ASUS">
-                    </li>
+                <li id="asus_logo">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660278070/logos%2023/Asus_m934ys.webp" alt="Logo ASUS">
+                </li>
 
-                    <li id="deepcool_logo">
-                        <img src="https://res.cloudinary.com/edalyn/image/upload/v1660192175/Desafio%20Coder/Marcas/deepcool-logo_j8cvy1.png" alt="Logo Deepcool">
-                    </li>
-                    
-                    <li id="intel_logo">
-                        <img src="https://res.cloudinary.com/edalyn/image/upload/v1660278070/logos%2023/intel_wlu0jf.png" alt="Logo Intel">
-                    </li>
+                <li id="deepcool_logo">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660192175/Desafio%20Coder/Marcas/deepcool-logo_j8cvy1.png" alt="Logo Deepcool">
+                </li>
                 
-                    <li id="nvidia_logo">
-                        <img src="https://res.cloudinary.com/edalyn/image/upload/v1660278070/logos%2023/nvidia-logo_sx1mmj.png" alt="Logo Nvidia">
-                    </li>
+                <li id="intel_logo">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660278070/logos%2023/intel_wlu0jf.png" alt="Logo Intel">
+                </li>
+            
+                <li id="nvidia_logo">
+                    <img src="https://res.cloudinary.com/edalyn/image/upload/v1660278070/logos%2023/nvidia-logo_sx1mmj.png" alt="Logo Nvidia">
+                </li>
             </div>
 
             <!-- Banner publicitario-->
 
             <aside class="publicitary_banner">
-            
                 <a href=""><img src="https://res.cloudinary.com/edalyn/image/upload/v1660431162/Desafio%20Coder/Banner_wqbsdn.png" alt="intel banner"></a>
             </aside>
 
+
             <!-- Productos destacados-->
+
 
             <div class="subtitle">
                 <h2>Productos destacados</h2>
             </div>
 
-            <div class="container_cards">
-                <article class="card">
+            <div class="container_cards row">
+                <article class="tarjeta col-lg-3 col-md-6 col-sm-12">
                     <figure>
                         <img src="https://res.cloudinary.com/edalyn/image/upload/v1661380240/Desafio%20Coder/Productos/Placa%20de%20video/PREVIOUS_NEXT_Placa_de_Video_XFX_Radeon_RX_6600_XT_8GB_GDDR6_SPEEDSTER_SWFT210_gcpp9e.png" alt="RX 6600">
                     </figure>
@@ -113,7 +129,7 @@
                     </div>
                 </article>
 
-                <article class="card">
+                <article class="tarjeta col-lg-3 col-md-6 col-sm-12">
                     <figure>
                         <img src="https://res.cloudinary.com/edalyn/image/upload/v1661379746/Desafio%20Coder/Productos/Mothers/asus_rog_maximus_xiii_hero_1620109_fafnya.png" alt="Asus Maximus XIII">
                     </figure>
@@ -124,7 +140,7 @@
                     </div>
                 </article>
 
-                <article class="card">
+                <article class="tarjeta col-lg-3 col-md-6 col-sm-12">
                     <figure>
                         <img src="https://res.cloudinary.com/edalyn/image/upload/v1661380061/Desafio%20Coder/Productos/Perifericos/Teclado_Mecanico_Logitech_G513_Carbon_RGB_Switch_GX_Brown_Espa%C3%B1ol_tnjfx5.png" alt="Logitech G513">
                     </figure>
@@ -135,7 +151,7 @@
                     </div>    
                 </article>
 
-                <article class="card">
+                <article class="tarjeta col-lg-3 col-md-6 col-sm-12">
                     <figure>
                         <img src="https://res.cloudinary.com/edalyn/image/upload/v1660185903/Desafio%20Coder/Productos/Gabinetes/Gabinete_Deepcool_MATREXX_70_ADD-RGB_3F_g2lirf.webp" alt="Deepcool MATREXX 70">
                     </figure>
@@ -146,15 +162,15 @@
                     </div>
                 </article>
             </div>
-            
-            
+        </section>
         </main>
+
         <!-- Comienzo del Footer-->
 
-        <footer class="">
+        <footer class="row">
             <div class="top_division"> <hr> </div>
             <article class="container_footer">
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Categorías</h2>
                         <a href="./pages/motherboards.html" target="_self">Motherboards</a>
                         <a href="./pages/placas-de-video.html" target="_self">Placas de video</a>
@@ -166,7 +182,7 @@
                         <a href="./pages/perifericos.html" target="_self">Periféricos</a>
                 </section>
 
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Marcas</h2>
                         <a href="https://www.amd.com/es">AMD</a>
                         <a href="https://www.asus.com/ar/">Asus</a>
@@ -175,21 +191,21 @@
                         <a href="https://www.nvidia.com/es-la/">Nvidia</a>
                 </section>
 
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Contacto</h2>
                     <a href="./pages/contacto.html">E-Mail</a>
                     <a href="https://whatsapp.com">Whatsapp</a>
                 </section>
                 
 
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Redes Sociales</h2>
                     <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
                     <a href="https://facebook.com" target="blank"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
                     <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
                     <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i>Youtube</a>
                 </section>
-                <div class="box_copyright">    
+                <div class="box_copyright" >    
                     <p>Todos los derechos reservados © 2022 &nbsp;</p>
                     <b>DeskON Hardware</b>
                 </div>       

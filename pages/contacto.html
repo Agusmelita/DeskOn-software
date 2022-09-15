@@ -9,41 +9,51 @@
         <!-- Descripcion de la pagina-->
         <meta name="description" content="¡Comunícate con nosotros!">
         <title>Contaco | DeskON Hardware</title>
-    </head>
-    <body>
-        <!-- Barra de navegacion -->
-        <header>
-            <nav class="menu-fixed">
-                <div class="header_width">
-                    <div class="logo">  
-                        <a href="../index.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660866818/Desafio%20Coder/Logo2_z7jvze.png" alt="DeskON_Logo" class="logo_img"></a>
-                    </div>
-                    <div class="landscape-menu">
-                        <li>
-                            <a href="#">Productos</a>
-                                <ul class="vertical-menu">
-                                    <li><a href="./motherboards.html" target="_self">Motherboards</a></li>
-                                    <li><a href="./placas-de-video.html" target="_self">Placas de video</a></li>
-                                    <li><a href="./microprocesadores.html" target="_self">Microprocesadores</a></li>
-                                    <li><a href="./fuentes.html" target="_self">Fuentes</a></li>
-                                    <li><a href="./gabinetes.html" target="_self">Gabinetes</a></li>
-                                    <li><a href="./memorias-ram.html" target="_self">Memorias RAM</a></li>
-                                    <li><a href="./almacenamiento.html" target="_self">Almacenamiento</a></li>
-                                    <li><a href="./perifericos.html" target="_self">Periféricos</a></li>
-                                </ul>
-                        
-                        <li><a href="./contacto.html" target="_self" class="contact_shortcut">Contacto</a></li>
-                    </div>
-                </div>
-    
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- Bootstrap-->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-            </nav>
+    </head>
+    <body class="container-fluid" style="background-color: #141414;">
+        
+        
+        <!-- Barra de navegacion -->
+
+        <nav class="navbar row navbar-expand navbar-dark" style="background-color: #3d1068;">
+            <div class="container-fluid">
+              <a href="../index.html"><img src="https://res.cloudinary.com/edalyn/image/upload/v1660866818/Desafio%20Coder/Logo2_z7jvze.png" alt="DeskON_Logo" class="logo_img"></a>
+
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="menuproductos" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuproductos" style="background-color: #3d1068;" >
+                            <li><a class="dropdown-item" href="./motherboards.html" target="_self">Motherboards</a></li>
+                            <li><a class="dropdown-item" href="./placas-de-video.html" target="_self">Placas de video</a></li>
+                            <li><a class="dropdown-item" href="./microprocesadores.html" target="_self">Microprocesadores</a></li>
+                            <li><a class="dropdown-item" href="./fuentes.html" target="_self">Fuentes</a></li>
+                            <li><a class="dropdown-item" href="./gabinetes.html" target="_self">Gabinetes</a></li>
+                            <li><a class="dropdown-item" href="./memorias-ram.html" target="_self">Memorias RAM</a></li>
+                            <li><a class="dropdown-item" href="./almacenamiento.html" target="_self">Almacenamiento</a></li>
+                            <li><a class="dropdown-item" href="./perifericos.html" target="_self">Periféricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="/pages/contacto.html" target="_self">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
         </header>
 
         <!-- Formulario-->
         <main>
             <form>
-                <div class="consult_form_title"><h2>¡Contáctanos!</h2></div>
+                <div class="consult_form_title col"><h2>¡Contáctanos!</h2></div>
                 <div class='field'>
                     <label>Nombre</label>
                     <input name='nombre' type='name'  autocomplete />
@@ -75,11 +85,10 @@
         </main>
 
         <!-- Comienzo del Footer-->
-        
-        <footer class="">
+        <footer class="row">
             <div class="top_division"> <hr> </div>
             <article class="container_footer">
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Categorías</h2>
                         <a href="./motherboards.html" target="_self">Motherboards</a>
                         <a href="./placas-de-video.html" target="_self">Placas de video</a>
@@ -91,7 +100,7 @@
                         <a href="./perifericos.html" target="_self">Periféricos</a>
                 </section>
 
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Marcas</h2>
                         <a href="https://www.amd.com/es">AMD</a>
                         <a href="https://www.asus.com/ar/">Asus</a>
@@ -100,14 +109,14 @@
                         <a href="https://www.nvidia.com/es-la/">Nvidia</a>
                 </section>
 
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Contacto</h2>
                     <a href="./pages/contacto.html">E-Mail</a>
                     <a href="https://whatsapp.com">Whatsapp</a>
                 </section>
                 
 
-                <section class="box_footer">
+                <section class="box_footer col-lg-3 col-md-6">
                     <h2>Redes Sociales</h2>
                     <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
                     <a href="https://facebook.com" target="blank"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
