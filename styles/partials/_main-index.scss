@@ -78,11 +78,11 @@
 .subtitle{
     justify-content: center;
     font-size: 24px;
-    color: rgb(204, 0, 255);
+    color: map-get($colores, effectColorMagenta);;
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 5vh;
-    text-shadow: 5px rgb(204, 0, 255),
+    text-shadow: 5px map-get($colores, effectColorMagenta);
 }
 
 @media all and (max-width: 767px) and (orientation: portrait){
@@ -91,6 +91,12 @@
     }
 }
 
+.tarjeta:hover{
+    border-color: map-get($colores, effectColorMagenta);
+    box-shadow: 0 0 5px map-get($colores, effectColorMagenta), 0 0 0 2px map-get($colores, effectColorMagenta); 
+    border-width: 1px;
+    transition: 0.8s;    
+  }
 
 .container_cards{
     width: 100%;
@@ -101,6 +107,7 @@
     padding-top: 7vh;
     padding-bottom: 8vh;
 
+
     .tarjeta{
         width: 330px;
         height: 520px;
@@ -109,16 +116,9 @@
         position: relative;
         text-align: center;
         border: solid;
-        border-color: #8f8f8f;
         border-width: 1px;
-    
-        :hover{
-            border-color: rgb(204, 0, 255);
-            box-shadow: 0 0 3px rgb(204, 0, 255), 0 0 0 1px rgb(204, 0, 255) ;
-            border-width: 1px;
-            transition: 0.8s;
-          
-          }
+        margin-bottom: 2vh;
+        
 
           img{
             width: 330px;
@@ -129,7 +129,7 @@
             padding-bottom: 4vh;
             padding-top: 3vh;
             font-weight: 20;
-            color: rgb(204, 0, 255)
+            color: map-get($colores, effectColorMagenta);
         }
         
 
@@ -147,15 +147,15 @@
         padding: 5px;
         text-decoration: none;
         font-weight: 500;
-        color: rgb(204, 0, 255);
+        color: map-get($colores, effectColorMagenta);
 
         }
 
         a:hover{
-            background-color: rgb(204, 0, 255);
-            border-color: rgb(204, 0, 255);
+            background-color: map-get($colores, effectColorMagenta);
+            border-color: map-get($colores, effectColorMagenta);
             color: #ffffff;
-            box-shadow: 0 0 5px rgb(204, 0, 255), 0 0 0 1px rgb(204, 0, 255);
+            box-shadow: 0 0 5px map-get($colores, effectColorMagenta), 0 0 0 1px map-get($colores, effectColorMagenta);
         }
     }
 
@@ -196,22 +196,13 @@
 }
 
 
-
-  
-  .tarjeta a:hover{
-    background-color: rgb(204, 0, 255);
-    border-color: rgb(204, 0, 255);
-    color: #ffffff;
-    box-shadow: 0 0 5px rgb(204, 0, 255), 0 0 0 1px rgb(204, 0, 255);
-  }
-
   @media all and (max-width: 730px) and (orientation: portrait){
     .container_cards{
         align-content: center;
         justify-content: center;
         margin: auto;
         padding-bottom: 120vh;
-        padding-top: 108vh;
+        padding-top: 118vh;
         margin-left: 20vw;
     }
 }
