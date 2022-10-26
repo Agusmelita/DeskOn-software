@@ -1,0 +1,110 @@
+.aside-filtros{
+    padding-top: 6vh;
+    max-width: 10vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros-generales{
+
+    h5{
+        color:map-get($colores, menuFontColorGrey);
+        padding-top: 2vh;
+    }
+
+    select{
+        background-color: map-get($colores, backgroundColorBlack);
+        color: map-get($colores, menuFontColorGrey);
+        font-size: 20px;
+        border-radius: 0px;
+        border: none;
+        border-color: map-get($colores ,effectColorMagenta);
+        outline: none;
+    
+    }
+
+}
+
+@media all and (max-width: 1041px){
+    .aside-filtros{
+        position: relative;
+        max-width: 100vw;
+        align-items: center;
+    }
+}
+
+.filtros{
+
+    color: map-get($colores, menuFontColorGrey );
+    padding-top: 1vh;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+
+    
+    h5{
+        color:map-get($colores, menuFontColorGrey);
+        padding-top: 2vh;
+    }
+
+    a{
+      text-decoration: none;
+      color: map-get($colores, menuFontColorGrey);  
+    
+    }
+
+    a:hover{
+        color: map-get($colores ,effectColorMagenta);
+    }
+
+}
+
+@media all and (max-width: 1041px){
+    .filtros{
+        display: none;
+    }
+}
+
+.filtros-responsive{
+    color: map-get($colores, menuFontColorGrey );
+    padding-top: 1vh;
+    font-size: 18px;
+    padding-top: 1vh;
+    max-width: 100vw;
+    height: 10vh;
+
+
+    h5{
+        color:map-get($colores, menuFontColorGrey);
+        padding-top: 2vh;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    a{
+      text-decoration: none;
+      color: map-get($colores, menuFontColorGrey);  
+    
+    }
+
+    a:hover{
+        color: map-get($colores ,effectColorMagenta);
+    }
+
+}
+
+
+.boton-abrir-filtros{
+    position: relative;
+    color: white;
+    font-size: 30px;   
+}
+
+
+@media all and (min-width: 1042px){
+    .filtros-responsive {
+        display: none;
+    }
+}
+
